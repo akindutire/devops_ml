@@ -4,12 +4,16 @@ LABEL maintainer="Udacity"
 
 ## Step 1:
 # Create a working directory
-RUN mkdir -p /app
-WORKDIR /app
+RUN mkdir -p /app/
+RUN mkdir -p /app/model_data/
+WORKDIR /app/
 
 ## Step 2:
 # Copy source code to working directory
-COPY . /app/
+COPY app.py /app/
+COPY requirements.txt /app/
+COPY model_data/* /app/model_data/
+COPY output_txt_files /app/
 
 ## Step 3:
 # Install packages from requirements.txt
