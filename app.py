@@ -66,7 +66,7 @@ def predict():
     LOG.info(f"Prediction output: \n{prediction}")
     
     return jsonify({'prediction': prediction})
-
+ 
 if __name__ == "__main__":
     # load pretrained model as clf
     clf = joblib.load("./model_data/boston_housing_prediction.joblib")

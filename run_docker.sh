@@ -12,7 +12,6 @@ docker image ls
 
 #Step 2.5:
 #Remove existing container
-
 docker rm -f ml_ops
 
 # Step 3: 
