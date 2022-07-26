@@ -1,1 +1,9 @@
-<paste log output from Kubernetes-mediated prediction, here>
+user@USERs-MBP devops_ml % ./run_kubernetes.sh
+Error from server (AlreadyExists): pods "mlops" already exists
+NAME    READY   STATUS    RESTARTS   AGE
+mlops   1/1     Running   0          3m25s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+

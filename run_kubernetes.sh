@@ -8,7 +8,7 @@ dockerpath=zil0/uda:ml_ops
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run mlops --image=${dockerpath} --port=80 --labels app=mlops
+kubectl run mlops --image=${dockerpath} --port=80
 
 # Step 3:
 # List kubernetes pods
